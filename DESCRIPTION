@@ -14,8 +14,8 @@ Suggests:
     rmarkdown,
     testthat (>= 3.0.0),
     withr
-URL: https://github.com/yourusername/Rcomments
-BugReports: https://github.com/yourusername/Rcomments/issues
+URL: https://github.com/lazaR360K/Rcomments
+BugReports: https://github.com/lazaR360K/Rcomments/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 RoxygenNote: 7.3.1

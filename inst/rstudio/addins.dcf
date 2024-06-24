@@ -1,0 +1,4 @@
+Name: Comment Selected Script
+Description: Adds comments to each line of the selected script using the GPT-3.5 Turbo API
+Binding: comment_script
+Interactive: true
