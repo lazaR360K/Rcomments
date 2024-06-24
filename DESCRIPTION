@@ -1,0 +1,24 @@
+Package: Rcomments
+Type: Package
+Title: Commenting Addin using GPT-3.5
+Version: 0.1.0
+Authors@R: person("Your", "Name", email = "your.email@example.com", role = c("aut", "cre"))
+Description: An RStudio addin to comment each line of a selected script using GPT-3.5 turbo API.
+Depends: 
+    R (>= 3.5.0)
+Imports: 
+    rstudioapi,
+    httr
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    withr
+URL: https://github.com/yourusername/Rcomments
+BugReports: https://github.com/yourusername/Rcomments/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+Language: en-GB
+LazyData: true

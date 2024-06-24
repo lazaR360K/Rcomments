@@ -1,0 +1,54 @@
+devtools::check()
+
+library(comsR)
+
+# Load ggplot2 package for data visualization in R. 
+ library(ggplot2)
+
+# Load the mtcars dataset into R environment. 
+ data(mtcars)
+# Display first 6 rows of mtcars dataset. 
+ head(mtcars)
+
+# Create a scatter plot with weight and miles per gallon. 
+ ggplot(mtcars, aes(x = wt, y = mpg)) +
+# Add points to a plot. 
+   geom_point() +
+# Add linear regression line to scatter plot. 
+   geom_smooth(method = "lm")
+
+# Summarize linear regression model of mpg and weight in mtcars. 
+ summary(lm(mpg ~ wt, data = mtcars))
+
+# Create random sample of 10 values from mtcars$mpg column. 
+ random_sample <- sample(mtcars$mpg, 10)
+
+# Calculate mean of random sample and assign to new variable. 
+ mean_random_sample <- mean(random_sample)
+
+# Set random number generator seed to 123 for reproducibility. 
+ set.seed(123)
+# Create sample data of 5 random values from mtcars$hp. 
+ sample_data <- sample(mtcars$hp, 5)
+
+# Create new column in mtcars with mpg/wt ratio. 
+ mtcars$new_col <- mtcars$mpg / mtcars$wt
+
+# Calculate mean mpg grouped by number of cylinders. 
+ aggregate(mpg ~ cyl, data = mtcars, FUN = mean)
+
+# Sort mtcars dataset by mpg column. 
+ sorted_mtcars <- mtcars[order(mtcars$mpg), ]
+
+# Assign unique values of 'cyl' column to 'unique_cylinders' variable. 
+ unique_cylinders <- unique(mtcars$cyl)
+
+# Create boxplot of miles per gallon by number of cylinders. 
+ boxplot(mpg ~ cyl, data = mtcars)
+
+# Create histogram of car horsepower with specified breaks, title, and label. 
+ hist(mtcars$hp, breaks = 10, main = "Histogram of Horsepower", xlab = "Horsepower")
+
+
+# Function to add comments to R script. 
+ comment_script()

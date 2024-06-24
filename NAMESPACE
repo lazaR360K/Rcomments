@@ -1,0 +1,2 @@
+importFrom(utils, installed.packages)
+export(comment_script)
