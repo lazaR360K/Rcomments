@@ -47,7 +47,7 @@ Once the package is installed, you can use the addin in RStudio to automatically
 
 5. **Click on Execute** to run the addin.
 
-![execute_script](https://github.com/lazaR360K/Rcomments/assets/173718166/6d9f4cc1-7e73-4d47-b992-f1d4575f9a31)
+![execute_script](https://github.com/lazaR360K/Rcomments/assets/173718166/39be11c6-f458-4840-bec1-f8407fcebdd9)
 
 
 ### Example of Output
