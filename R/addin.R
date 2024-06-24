@@ -1,3 +1,4 @@
+# R/addin.R
 library(rstudioapi)
 library(httr)
 
@@ -15,7 +16,7 @@ is_rstudio_available <- function() {
 get_comment <- function(line, api_key) {
   url <- "https://api.openai.com/v1/chat/completions"
   response <- httr::POST(url,
-                         httr::add_headers(`Authorization` = paste("Bearer", api_key),
+                         httr::add_headers(Authorization = paste("Bearer", api_key),
                                            `Content-Type` = "application/json"),
                          body = list(
                            model = "gpt-3.5-turbo",
