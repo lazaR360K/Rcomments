@@ -10,7 +10,7 @@ To install the package, open RStudio and run the following commands in the conso
 if (!requireNamespace("devtools", quietly = TRUE)) {
   install.packages("devtools")
 }
-devtools::install_github("lazaR360K/RcommentsAddin")
+devtools::install_github("lazaR360K/Rcomments")
 ```
 
 ## Usage
