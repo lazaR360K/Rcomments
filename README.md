@@ -34,12 +34,20 @@ After installing the package, you can use the addin by following these steps:
 
    # Call the comment_script function
    comment_script()
+![selecting](https://github.com/lazaR360K/RcommentsAddin/assets/173718166/3abb609d-cf78-48eb-835d-59f7e4bd917f)
+
    ```
 
 3. **Run the Selected Code:**
 
    With the code selected, run it by pressing `Ctrl + Enter` (or `Cmd + Enter` on macOS). This will trigger the `comment_script()` function, which will process your selected code and add comments using the provided API key.
 
+ ```
+![APIKey](https://github.com/lazaR360K/RcommentsAddin/assets/173718166/27916f42-bc3b-49f2-abdf-bcc985f27ab1)
+
+![result](https://github.com/lazaR360K/RcommentsAddin/assets/173718166/72ede391-fe3a-463c-b13e-ca7629e38127)
+
+ ```
 ## Troubleshooting
 
 If the addin does not appear in the RStudio Addins menu, ensure the following:
