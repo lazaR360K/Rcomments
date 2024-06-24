@@ -3,7 +3,7 @@ Type: Package
 Title: Commenting Addin using GPT-3.5
 Version: 0.1.0
 Authors@R: person("LazaR", "K", email = "lkovacevic360@gmail.com", role = c("aut", "cre"))
-Description: An RStudio package to comment each line of a selected script using GPT-3.5 turbo API.
+Description: An RStudio package + addin to comment each line of a selected script using GPT-3.5 turbo API.
 Depends: 
     R (>= 3.5.0)
 Imports: 
