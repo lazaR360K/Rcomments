@@ -20,7 +20,7 @@ After installing the package, you can use the addin by following these steps:
 1. **Load the Package:**
 
    ```r
-   library(RcommentsAddin)
+   library(Rcomments)
    ```
 
 2. **Select Your Lines of Code:**
