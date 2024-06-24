@@ -1,109 +1,75 @@
-RcommentsAddin
+## Installation and Usage of Rcomments Addin
 
-An RStudio addin for commenting selected scripts using an API key.
+### Installation
 
-##Installation
+To install the `Rcomments` package from GitHub, follow these steps:
 
-To install the package, open RStudio and run the following commands in the console:
+1. **Install the `devtools` package** if it is not already installed:
+    ```R
+    install.packages("devtools")
+    ```
 
-```r
-if (!requireNamespace("devtools", quietly = TRUE)) {
-  install.packages("devtools")
-}
-devtools::install_github("lazaR360K/Rcomments")
-```
+2. **Load the `devtools` package**:
+    ```R
+    library(devtools)
+    ```
 
-## Usage
+3. **Install the `Rcomments` package from GitHub**:
+    ```R
+    install_github("lazaR360K/Rcomments")
+    ```
 
-After installing the package, you can use the addin by following these steps:
+4. **Load the `Rcomments` package**:
+    ```R
+    library(Rcomments)
+    ```
 
-1. **Load the Package:**
+![start](https://github.com/lazaR360K/Rcomments/assets/173718166/058dae30-a068-4c31-bc51-6b0de7c119f8)
 
-   ```r
-   library(Rcomments)
-   ```
 
-2. **Select Your Lines of Code:**
+### Using the Addin
 
-   Select the lines of code you want to comment on, including the `comment_script()` function call. For example:
+Once the package is installed, you can use the addin in RStudio to automatically comment your R scripts. Here are the steps to do that:
 
-   ```r
-   # Your lines of code
-   x <- 1:10
-   y <- x^2
+1. **Open RStudio** and load a script file or create a new one.
 
-   # Call the comment_script function
-   comment_script()
-![selecting](https://github.com/lazaR360K/RcommentsAddin/assets/173718166/3abb609d-cf78-48eb-835d-59f7e4bd917f)
+2. **Select the code** that you want to comment.
 
-   ```
+![input](https://github.com/lazaR360K/Rcomments/assets/173718166/2e8142a2-421e-429c-9176-cdedf17a1279)
 
-3. **Run the Selected Code:**
 
-   With the code selected, run it by pressing `Ctrl + Enter` (or `Cmd + Enter` on macOS). This will trigger the `comment_script()` function, which will process your selected code and add comments using the provided API key.
+3. **Go to the Addins menu** in the RStudio toolbar and click on **Browse Addins...**.
 
- ```
-![APIKey](https://github.com/lazaR360K/RcommentsAddin/assets/173718166/27916f42-bc3b-49f2-abdf-bcc985f27ab1)
+![process](https://github.com/lazaR360K/Rcomments/assets/173718166/95710460-c97a-4923-89c4-61a4c234bb42)
 
-![result](https://github.com/lazaR360K/RcommentsAddin/assets/173718166/72ede391-fe3a-463c-b13e-ca7629e38127)
 
- ```
-## Troubleshooting
+4. **Find the "Comment Selected Script" addin** in the list of addins. You can filter addins by typing "Comment Selected Script" in the Filter addins box.
 
-If the addin does not appear in the RStudio Addins menu, ensure the following:
+5. **Click on Execute** to run the addin.
 
-1. **Restart RStudio:**
-   Sometimes RStudio needs to be restarted to recognize new addins.
+![execute_script](https://github.com/lazaR360K/Rcomments/assets/173718166/6d9f4cc1-7e73-4d47-b992-f1d4575f9a31)
 
-2. **Check Addin Configuration:**
-   Ensure that the `addin.json` file is correctly configured and located in the appropriate directory (`inst/rstudio/addins/`).
 
-3. **Directory Structure:**
-   Make sure your package has the following structure:
+### Example of Output
 
-   ```
-   RcommentsAddin/
-   ├── .Rbuildignore
-   ├── .gitignore
-   ├── DESCRIPTION
-   ├── LICENSE
-   ├── NAMESPACE
-   ├── R/
-   │   └── addin.R
-   ├── inst/
-   │   └── rstudio/
-   │       └── addins/
-   │           └── addin.json
-   ├── man/
-   │   └── comment_script.Rd
-   └── Rcomments.Rproj
-   ```
+Here is an example of the output after running the addin on a selected script:
 
-## License
+![output](https://github.com/lazaR360K/Rcomments/assets/173718166/cdec3cec-f191-4198-b5ec-5175cd3869e1)
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Contributing
+This will automatically add comments to each line of your selected script using the GPT-3.5 Turbo API.
 
-Contributions are welcome! Please open an issue or submit a pull request with any improvements or bug fixes.
+### Features
 
-```
+- The addin can handle any type or complexity of R code, providing clear and concise comments for each line.
+- It uses the GPT-3.5 Turbo API to generate comments, ensuring high-quality short explanations.
 
-### How to Add the README to Your Repository
+By following these steps, you should be able to install and use the `Rcomments` addin in RStudio to comment your R scripts automatically.
 
-1. **Create a `README.md` file:**
-   Create a file named `README.md` in the root directory of your repository.
 
-2. **Add the Content:**
-   Copy and paste the above content into the `README.md` file.
+### Notes
 
-3. **Commit and Push:**
-   Use the following commands to commit and push the `README.md` file to your repository:
+- Ensure you have an active internet connection as the addin uses an API call to generate comments.
+- You will be prompted to enter your OpenAI API key when you run the addin for the first time.
 
-   ```sh
-   git add README.md
-   git commit -m "Add README.md"
-   git push origin master
-   ```
-
-This `README.md` file provides clear instructions for users on how to install and use your RStudio addin, ensuring a smooth experience. If you have any further requests or need additional modifications, please let me know!
+By following these steps, you should be able to install and use the `Rcomments` addin in RStudio to comment your R scripts automatically.
