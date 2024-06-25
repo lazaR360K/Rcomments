@@ -2,10 +2,10 @@
 % Please edit documentation in R/addin.R
 \name{comment_script}
 \alias{comment_script}
-\title{Comment Script}
+\title{Comment Script and Suggest Next Steps}
 \usage{
 comment_script()
 }
 \description{
-This function adds comments to each line of the selected script using the GPT-3.5 Turbo API.
+This function adds comments to each line of the selected script using the GPT-3.5 Turbo API and suggests next steps for analysis.
 }

@@ -1,4 +1,9 @@
-Name: Comment Selected Script
-Description: Adds comments to each line of the selected script using the GPT-3.5 Turbo API
+Name: Comment Selected Script and Suggest Next Steps
+Description: Adds comments to each line of the selected script using the GPT-3.5 Turbo API and suggests next steps for analysis.
 Binding: comment_script
+Interactive: true
+
+Name: Execute Next Step
+Description: Execute the next step of the analysis based on previous code using GPT-3.5 Turbo API.
+Binding: execute_next_step
 Interactive: true
